@@ -632,12 +632,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 
     var ContactComponent =
     /*#__PURE__*/
     function () {
-      function ContactComponent() {
+      function ContactComponent(titleService, metaService) {
         _classCallCheck(this, ContactComponent);
+
+        this.titleService = titleService;
+        this.metaService = metaService;
+        this.titleService.setTitle('Liên hệ');
+        this.metaService.updateTag({
+          name: 'keywords',
+          content: 'Gia cầm giống, Gà giống, Vịt giống, Bán buôn vịt giống'
+        });
+        this.metaService.updateTag({
+          name: 'description',
+          content: 'Trang web bán gà vịt giống Khánh Phương'
+        }, 'name="description"');
       }
 
       _createClass(ContactComponent, [{
@@ -649,7 +667,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     ContactComponent.ɵfac = function ContactComponent_Factory(t) {
-      return new (t || ContactComponent)();
+      return new (t || ContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]));
     };
 
     ContactComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -679,7 +697,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           styleUrls: ['./contact.component.scss']
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]
+        }];
       }, null);
     })();
     /***/
@@ -711,12 +733,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 
     var HomeComponent =
     /*#__PURE__*/
     function () {
-      function HomeComponent() {
+      function HomeComponent(titleService, metaService) {
         _classCallCheck(this, HomeComponent);
+
+        this.titleService = titleService;
+        this.metaService = metaService;
+        this.titleService.setTitle('Gà vịt giống Khánh Phương');
+        this.metaService.updateTag({
+          name: 'keywords',
+          content: 'Gia cầm giống, Gà giống, Vịt giống, Bán buôn vịt giống'
+        });
+        this.metaService.updateTag({
+          name: 'description',
+          content: 'Trang web bán gà vịt giống Khánh Phương'
+        }, 'name="description"');
       }
 
       _createClass(HomeComponent, [{
@@ -728,7 +768,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     HomeComponent.ɵfac = function HomeComponent_Factory(t) {
-      return new (t || HomeComponent)();
+      return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]));
     };
 
     HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -895,7 +935,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           styleUrls: ['./home.component.scss']
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]
+        }];
       }, null);
     })();
     /***/
@@ -927,12 +971,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 
     var PostComponent =
     /*#__PURE__*/
     function () {
-      function PostComponent() {
+      function PostComponent(titleService, metaService) {
         _classCallCheck(this, PostComponent);
+
+        this.titleService = titleService;
+        this.metaService = metaService;
+        this.titleService.setTitle('Bài viết');
+        this.metaService.updateTag({
+          name: 'keywords',
+          content: 'Gia cầm giống, Gà giống, Vịt giống, Bán buôn vịt giống'
+        });
+        this.metaService.updateTag({
+          name: 'description',
+          content: 'Trang web bán gà vịt giống Khánh Phương'
+        }, 'name="description"');
       }
 
       _createClass(PostComponent, [{
@@ -944,7 +1006,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     PostComponent.ɵfac = function PostComponent_Factory(t) {
-      return new (t || PostComponent)();
+      return new (t || PostComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]));
     };
 
     PostComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -974,7 +1036,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           styleUrls: ['./post.component.scss']
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]
+        }];
       }, null);
     })();
     /***/
@@ -1006,12 +1072,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/platform-browser */
+    "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 
     var ProductComponent =
     /*#__PURE__*/
     function () {
-      function ProductComponent() {
+      function ProductComponent(titleService, metaService) {
         _classCallCheck(this, ProductComponent);
+
+        this.titleService = titleService;
+        this.metaService = metaService;
+        this.titleService.setTitle('Sản phẩm');
+        this.metaService.updateTag({
+          name: 'keywords',
+          content: 'Gia cầm giống, Gà giống, Vịt giống, Bán buôn vịt giống'
+        });
+        this.metaService.updateTag({
+          name: 'description',
+          content: 'Trang web bán gà vịt giống Khánh Phương'
+        }, 'name="description"');
       }
 
       _createClass(ProductComponent, [{
@@ -1023,7 +1107,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     ProductComponent.ɵfac = function ProductComponent_Factory(t) {
-      return new (t || ProductComponent)();
+      return new (t || ProductComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]));
     };
 
     ProductComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -1053,7 +1137,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           styleUrls: ['./product.component.scss']
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Title"]
+        }, {
+          type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["Meta"]
+        }];
       }, null);
     })();
     /***/
